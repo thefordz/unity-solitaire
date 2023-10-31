@@ -887,6 +887,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 0225931f5a6c04981af14eb08a8898f3, type: 3}
   m_PrefabInstance: {fileID: 1137516002}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1296824882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1296824883}
+  - component: {fileID: 1296824885}
+  - component: {fileID: 1296824884}
+  m_Layer: 0
+  m_Name: SolitaireGame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1296824883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296824882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1296824884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296824882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e05c4d7ab884af391276623d891b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1296824885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296824882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6339f49a166b4466a7fae66bd132bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1465917435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1474,3 +1531,4 @@ SceneRoots:
   - {fileID: 623949333}
   - {fileID: 1047594568}
   - {fileID: 1604407431}
+  - {fileID: 1296824883}

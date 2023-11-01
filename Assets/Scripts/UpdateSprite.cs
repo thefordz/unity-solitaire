@@ -1,8 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UpdateSprites : MonoBehaviour
+public class UpdateSprite : MonoBehaviour
 {
     public Sprite cardFace;
     public Sprite cardBack;
@@ -10,6 +10,9 @@ public class UpdateSprites : MonoBehaviour
     private Selectable selectable;
     private Solitaire solitaire;
     private UserInput userInput;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +30,6 @@ public class UpdateSprites : MonoBehaviour
             }
             i++;
         }
-
         spriteRenderer = GetComponent<SpriteRenderer>();
         selectable = GetComponent<Selectable>();
     }
@@ -46,6 +48,7 @@ public class UpdateSprites : MonoBehaviour
 
         if (userInput.slot1)
         {
+
             if (name == userInput.slot1.name)
             {
                 spriteRenderer.color = Color.yellow;

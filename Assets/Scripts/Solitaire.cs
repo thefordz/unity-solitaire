@@ -99,6 +99,7 @@ public class Solitaire : MonoBehaviour
                 yield return new WaitForSeconds(0.01f);
                 GameObject newCard = Instantiate(cardPrefab, new Vector3(bottomPos[i].transform.position.x, bottomPos[i].transform.position.y - yOffset, bottomPos[i].transform.position.z - zOffset), Quaternion.identity, bottomPos[i].transform);
                 newCard.name = card;
+                newCard.GetComponent<Selectable>().row = i;
                 if (card == bottoms[i][bottoms[i].Count - 1])
                 {
                     newCard.GetComponent<Selectable>().faceUp = true;
@@ -194,6 +195,7 @@ public class Solitaire : MonoBehaviour
                 newTopCard.name = card;
                 tripsOnDisplay.Add(card);
                 newTopCard.GetComponent<Selectable>().faceUp = true;
+                newTopCard.GetComponent<Selectable>().inDeckPile = true;
             }
             deckLocation++;
 
